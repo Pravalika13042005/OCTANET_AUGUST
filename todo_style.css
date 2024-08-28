@@ -1,0 +1,58 @@
+body{
+    background-image: url(https://marketplace.canva.com/EAFwcRyyf8I/1/0/1600w/canva-peach-purple-aesthetic-pastel-blank-notes-a4-document-9kCgf2vRxmM.jpg);
+    min-height: 150vh;
+}
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.todo{
+    display: flex;
+    background:white;
+    padding:20px;
+    width:500px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+.content{
+    min-height: 120vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width:500px;
+    margin:auto;
+    height: 100%;
+}
+
+.logo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    -webkit-text-fill-color:rgb(54, 3, 95);
+    justify-content: center;
+    display: flex;
+    padding: 25px;
+    
+}
+.checkbox{
+    cursor: pointer;
+    border-color: 1px rgb(54, 3, 95);
+}
+.value{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    align-items: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    -webkit-text-fill-color:rgb(54, 3, 95);
+    font-weight: bold;
+    flex-grow: 1;
+    border-bottom: 2px solid rgb(54, 3, 95);
+}
+.todo:has(.checkbox:checked){
+    text-decoration:line-through 1.5px;
+    order: 1;
+}
